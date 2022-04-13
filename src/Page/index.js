@@ -3,6 +3,7 @@ import mainImg from "../Assets/images/main.png";
 import "../Assets/css/default.css";
 import "../Assets/css/main.css";
 import "../Assets/css/qna.css";
+import "../Assets/css/result.css";
 import "../Assets/css/animation.css";
 import * as event from "../Assets/js/start.js";
 
@@ -22,13 +23,19 @@ const Main=()=>{
 			</section>
 
 			<section id="qna">
-				<p>
-					test!
-				</p>
-			</section>
+				<div className="status mx-auto my-5">
+					<div className="statusBar"></div>
+				</div>
+				<div className="qBox mx-auto my-5 py-3"></div>
+				<div className="answerBox"></div>
+			</section>	
 
 			<section id="result">
-
+			<h1 className="pt-5">당신의 연애유형 결과는?</h1>
+				<p className="resultName"></p>
+				<div id="resultImg" className="col-lg-6 col-md-8 col-sm-10 mx-auto"></div>
+				<p className="resultDesc"></p>
+				<button type="button" className="btn btn-outline-danger mt-3" onClick={event.begin}>공유하기</button>
 			</section>
 		</div>
 	)
