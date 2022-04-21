@@ -30,12 +30,12 @@ const Main=()=>{
 				<div className="answerBox"></div>
 			</section>	
 
-			<section id="result">
-			<h1 className="pt-5">당신의 연애유형 결과는?</h1>
+			<section id="result" className="mx-auto mt-5 py-5 px-3">
+				<h1 className="pt-5">당신의 연애유형 결과는?</h1>
 				<p className="resultName"></p>
 				<div id="resultImg" className="col-lg-6 col-md-8 col-sm-10 mx-auto"></div>
 				<p className="resultDesc"></p>
-				<button type="button" className="btn btn-outline-danger mt-3" onClick={event.begin}>공유하기</button>
+				<button type="button" className="btn btn-kakao mt-3" >공유하기</button>
 			</section>
 		</div>
 	)
