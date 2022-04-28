@@ -1,5 +1,4 @@
 import React from "react";
-import mainImg from "../Assets/images/main.png";
 import "../Assets/css/default.css";
 import "../Assets/css/main.css";
 import "../Assets/css/qna.css";
@@ -13,7 +12,7 @@ const Main=()=>{
 			<section id="main" className="mx-auto mt-5 py-5 px-3">
 				<h1 className="pt-5">십이간지로 알아보는 연애유형</h1>
 				<div className="col-lg-6 col-md-8 col-sm-10 mx-auto">
-					<img src={mainImg} alt="메인 이미지" className="img-fluid" />
+					<img src="./images/main.png" alt="메인 이미지" className="img-fluid" />
 				</div>
 				<p className="txt">
 					나만의 MBTI 사이트입니다!<br/>
