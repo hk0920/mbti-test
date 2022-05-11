@@ -1,0 +1,26 @@
+#result {
+    display:none;
+    width:80%;
+    border-radius:20px;
+    background:whitesmoke;
+    text-align:center;
+}
+#result h1{
+    font-weight:bold;
+}
+#result .resultName {
+    font-size:20px;
+    font-weight:bold;
+}
+#result #resultImg img {
+    max-width:100%;
+    text-align:center;
+}
+#result .btn-kakao {
+    font-size:20px;
+    background-color:#fee500;
+    border:2px solid #fee500;
+}
+#result .btn-kakao:hover, #result .btn-kakao:focus {
+    background-color:white;
+}
