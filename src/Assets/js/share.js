@@ -1,7 +1,7 @@
 import { infoList } from "./data";
 
 export const kakaoShare=()=>{
-  const url = "http://localhost:3000";
+  const url = "https://mbti-twelvelovetype.netlify.app/";
   const resultImg = document.querySelector("#resultImg");
   const resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = "십이간지 연애유형 결과";
