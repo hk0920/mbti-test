@@ -4,7 +4,7 @@ const endPoint = 12;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 const calResult=()=>{	
-	console.log(select);
+	// console.log(select);
 	const result = select.indexOf(Math.max(...select));
 	return result;
 }
@@ -70,9 +70,9 @@ const addAnswer=(answerText, qIdx, idx)=>{
 		}
 		setTimeout(() => {
 			const target = data.qnaList[qIdx].a[idx].type;
-			console.log("target=>" + target)
+			// console.log("target=>" + target)
 			for(let i=0; i<target.length; i++){
-				console.log("i번째"+i+", select["+ target +"]=>" + select[target[i]]);
+				// console.log("i번째"+i+", select["+ target +"]=>" + select[target[i]]);
 				select[target[i]] += 1;
 			}
 

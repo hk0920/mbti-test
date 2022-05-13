@@ -5,6 +5,10 @@
     background:whitesmoke;
     text-align:center;
 }
+#result.share-type {
+    display:block;
+}
+
 #result h1{
     font-weight:bold;
 }
@@ -22,5 +26,15 @@
     border:2px solid #fee500;
 }
 #result .btn-kakao:hover, #result .btn-kakao:focus {
+    background-color:white;
+}
+#result .btn-home {
+    font-size:20px;
+    color:#fff;
+    background-color:palevioletred;
+    border:2px solid palevioletred;
+}
+#result .btn-home:hover, #result .btn-home:focus {
+    color:palevioletred;
     background-color:white;
 }

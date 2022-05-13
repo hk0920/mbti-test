@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Assets/css/default.css";
 import "../Assets/css/main.css";
 import "../Assets/css/qna.css";
 import "../Assets/css/result.css";
 import "../Assets/css/animation.css";
 import * as event from "../Assets/js/start.js";
+import * as share from "../Assets/js/share.js";
 
 const Main=()=>{
+	useEffect(()=>{
+		window.Kakao.init('03149e7d839515eac146de95b04314e0');
+		console.log(window.Kakao.isInitialized())
+	},[])
+
 	return(
 		<div className="container">
 			<section id="main" className="mx-auto mt-5 py-5 px-3">
@@ -34,7 +40,7 @@ const Main=()=>{
 				<p className="resultName"></p>
 				<div id="resultImg" className="col-lg-6 col-md-8 col-sm-10 mx-auto"></div>
 				<p className="resultDesc"></p>
-				<button type="button" className="btn btn-kakao mt-3" >공유하기</button>
+				<button type="button" className="btn btn-kakao mt-3" onClick={share.kakaoShare}>공유하기</button>
 			</section>
 		</div>
 	)
